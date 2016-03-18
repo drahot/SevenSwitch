@@ -417,6 +417,8 @@ import QuartzCore
             
             thumbView.layer.cornerRadius = self.isRounded ? (self.thumbDiameter * 0.5) : 2
             
+            onImageView.frame = CGRectMake(self.borderWidth,self.borderWidth,frame.size.width-(self.borderWidth*2+self.thumbDiameter),frame.size.height-(self.borderWidth*2))
+            offImageView.frame = CGRectMake(self.borderWidth+self.thumbDiameter,self.borderWidth,frame.size.width-(self.borderWidth*2+self.thumbDiameter),frame.size.height-(self.borderWidth*2))
             onLabel.frame = CGRectMake(self.borderWidth,self.borderWidth,frame.size.width-(self.borderWidth*2+self.thumbDiameter),frame.size.height-(self.borderWidth*2))
             offLabel.frame = CGRectMake(self.borderWidth+self.thumbDiameter,self.borderWidth,frame.size.width-(self.borderWidth*2+self.thumbDiameter),frame.size.height-(self.borderWidth*2))
         }
